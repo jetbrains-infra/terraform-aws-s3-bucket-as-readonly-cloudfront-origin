@@ -1,6 +1,6 @@
 ## About
 
-Terraform module to create an S3 bucket with specific Cloudfront AOI and the resource policy to allow use 3 the bucket as
+Terraform module to create an S3 bucket with specific Cloudfront AOI and the resource policy to allow use the bucket as
 Cloudfront origin.
 
 **NB!** This module creates one origin access identity for each bucket. Please take into account the follows:
