@@ -22,9 +22,10 @@ module "my_assets" {
 Default values:
 ```hcl
 module "my_assets" {
-  source      = "github.com/jetbrains-infra/terraform-aws-s3-bucket-as-readonly-cloudfront-origin?ref=vX.X.X" // see https://github.com/jetbrains-infra/terraform-aws-s3-bucket-as-readonly-cloudfront-origin/releases
-  bucket_name = "my-project-assets"
-  versioning  = false
+  source        = "github.com/jetbrains-infra/terraform-aws-s3-bucket-as-readonly-cloudfront-origin?ref=vX.X.X" // see https://github.com/jetbrains-infra/terraform-aws-s3-bucket-as-readonly-cloudfront-origin/releases
+  bucket_name   = "my-project-assets"
+  versioning    = false
+  force_destroy = false
 
   tags = {
     Module       = "S3 Bucket as ReadOnly Cloudfront Origin"

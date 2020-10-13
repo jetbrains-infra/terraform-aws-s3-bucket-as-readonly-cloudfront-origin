@@ -1,7 +1,8 @@
 resource "aws_s3_bucket" "origin" {
-  bucket = local.bucket
-  acl    = "private"
-  tags   = local.tags
+  bucket        = local.bucket
+  acl           = "private"
+  tags          = local.tags
+  force_destroy = local.force_destroy
   versioning {
     enabled = local.versioning
   }
