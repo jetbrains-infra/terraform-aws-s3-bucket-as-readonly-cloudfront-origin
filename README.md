@@ -38,3 +38,4 @@ module "my_assets" {
 
 * `oai_arn` - origin access identity ARN
 * `bucket` - bucket name
+* `domain` - bucket regional domain name
