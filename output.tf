@@ -1,6 +1,9 @@
 output "oai_arn" {
   value = aws_cloudfront_origin_access_identity.storage.iam_arn
 }
+output "oai_path" {
+  value = aws_cloudfront_origin_access_identity.storage.cloudfront_access_identity_path
+}
 output "bucket" {
   value = local.bucket
 }
