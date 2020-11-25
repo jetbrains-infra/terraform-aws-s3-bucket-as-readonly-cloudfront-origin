@@ -36,7 +36,8 @@ module "my_assets" {
 
 ## Outputs
 
-* `oai_arn` - origin access identity ARN
-* `oai_path` - CloudFront access identity path
-* `bucket` - bucket name
-* `domain` - bucket regional domain name
+* `oai_arn` - origin access identity ARN.
+* `oai_path` - CloudFront access identity path.
+* `bucket` - bucket name.
+* `arn` - bucket arn.
+* `domain` - bucket regional domain name.
