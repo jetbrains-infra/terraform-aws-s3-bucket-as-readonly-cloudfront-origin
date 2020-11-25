@@ -7,6 +7,9 @@ output "oai_path" {
 output "bucket" {
   value = local.bucket
 }
+output "arn" {
+  value = aws_s3_bucket.origin.arn
+}
 output "domain" {
   value = aws_s3_bucket.origin.bucket_regional_domain_name
 }
